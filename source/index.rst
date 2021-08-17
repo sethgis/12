@@ -79,6 +79,16 @@ Transboundary Basins, i.e Cuvelai, Zambezi, Limpopo and Okavango.
     :height: 300
     :alt: WeMAST Data Source
     :figclass: align-left
+    
+    
+.. figure:: ../Images/Data Source.png
+    :width: 700
+    :align: center
+    :height: 500
+    :alt: Forest fires methodology
+    :figclass: align-center
+
+    Sammury methodology for conputing Burnt Areas
 
 
 
