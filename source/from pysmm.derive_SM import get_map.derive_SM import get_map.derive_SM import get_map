@@ -1,0 +1,10 @@
+from pysmm.derive_SM import get_map
+get_map(*minlon*, *minlat*, *maxlon*, *maxlat*,
+        'path/to/outdir/',
+        samping=100,                            # specify desired output resolution
+        year=None, month=None, day=None,        # define a date (optional)
+        tracknr=None,                           # define the Sentinel-1 track (optinal)
+        tempfilter=True,
+        mask='Globcover',
+        masksnow=True,
+        overwrite=True)
