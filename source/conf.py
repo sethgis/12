@@ -70,6 +70,23 @@ exclude_patterns = []
 html_theme = 'sphinx_rtd_theme'
 # html_theme = "sphinx_rtd_theme"
 
+html_theme_options = {
+    'analytics_id': 'G-XXXXXXXXXX',  #  Provided by Google in your dashboard
+    'analytics_anonymize_ip': False,
+    'logo_only': False,
+    'display_version': True,
+    'prev_next_buttons_location': "both",
+    'style_external_links': False,
+    'vcs_pageview_mode': '',
+    'style_nav_header_background': 'green',
+    # Toc options
+    'collapse_navigation': True,
+    'sticky_navigation': True,
+    'navigation_depth': 2,
+    'includehidden': True,
+    'titles_only': False
+}
+
 
 #html_theme_options['cssfiles'] = ['_static/style.css']
 #html_theme_path = []
