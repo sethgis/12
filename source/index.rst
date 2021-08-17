@@ -24,7 +24,7 @@ Indices and tables
 System Documentation
 ****************************************  
 
-.. image:: source/map11.JPG
+.. image:: ..source/map11.JPG
   :width: 400
   :alt: Alternative text
 
