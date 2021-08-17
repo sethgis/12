@@ -67,26 +67,51 @@ exclude_patterns = []
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'sphinx_rtd_theme'
-# html_theme = "sphinx_rtd_theme"
+import sphinx_rtd_theme
+
+extensions = [
+	
+]
+
+
+# Add any paths that contain templates here, relative to this directory.
+templates_path = ['_templates']
+
+# List of patterns, relative to source directory, that match files and
+# directories to ignore when looking for source files.
+# This pattern also affects html_static_path and html_extra_path.
+exclude_patterns = []
+
+
+# -- Options for HTML output -------------------------------------------------
+
+# The theme to use for HTML and HTML Help pages.  See the documentation for
+# a list of builtin themes.
+#
+#html_theme = 'alabaster'
+#html_theme_path = [better_theme_path]
+html_theme = "sphinx_rtd_theme"
+
+html_sidebars = { '**': ['globaltoc.html', 'relations.html', 'sourcelink.html', 'searchbox.html'] }
+
 
 html_theme_options = {
-    'analytics_id': 'G-XXXXXXXXXX',  #  Provided by Google in your dashboard
-    'analytics_anonymize_ip': False,
-    'logo_only': True,
+	'canonical_url': '',
+    'analytics_id': '',  #  Provided by Google in your dashboard
+    #'analytics_anonymize_ip': False,
+    'logo_only': False,
     'display_version': True,
-    'prev_next_buttons_location': "bottom",
+    'prev_next_buttons_location': 'bottom',
     'style_external_links': False,
-    'vcs_pageview_mode': '',
-    'style_nav_header_background': 'green',
+    #'vcs_pageview_mode': '',
+    'style_nav_header_background': 'black',
     # Toc options
-    'collapse_navigation': True,
+    'collapse_navigation': False,
     'sticky_navigation': True,
-    'navigation_depth': 2,
-    'includehidden': True,
+    'navigation_depth': 5,
+    'includehidden': False,
     'titles_only': False
-}
-
+	}
 
 #html_theme_options['cssfiles'] = ['_static/style.css']
 #html_theme_path = []
@@ -94,7 +119,7 @@ html_theme_options = {
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
-# html_logo = 'logo.png'
+html_logo = 'logo.png'
 
 html_context = {
 "display_github": False, # Add 'Edit on Github' link instead of 'View page source'
@@ -102,67 +127,19 @@ html_context = {
 "commit": False,
 }
 
+latex_elements = {
+# The paper size ('letterpaper' or 'a4paper').
+#'papersize': 'letterpaper',
 
+# The font size ('10pt', '11pt' or '12pt').
+'pointsize': '10pt',
 
-# latex_elements = {
-# # The paper size ('letterpaper' or 'a4paper').
-# #'papersize': 'letterpaper',
+# Additional stuff for the LaTeX preamble.
+#'preamble':'',
 
-# # The font size ('10pt', '11pt' or '12pt').
-# 'pointsize': '10pt',
+#Figure placement within LaTeX paper NOT WORKING
+'figure_align': 'H',
 
-# # Additional stuff for the LaTeX preamble.
-# #'preamble':'',
-
-# #Figure placement within LaTeX paper NOT WORKING
-# 'figure_align': 'H',
-
-# }
-
-html_theme_options = {
-    "rightsidebar": "true",
-    "relbarbgcolor": "blue",
-    
 }
 
-# latex_documents = [
-  
-# ]
-
-# latex_elements = {
-#      'papersize': '',
-#      'fontpkg': '',
-#      'fncychap': '',
-#      'maketitle': '\\cover',
-#      'pointsize': '',
-#      'preamble': '',
-#      'releasename': "",
-#      'babel': '',
-#      'printindex': '',
-#      'fontenc': '',
-#      'inputenc': '',
-#      'classoptions': '',
-#      'utf8extra': '',
-     
-# }
-
-# latex_additional_files = ["mfgan-bw.sty", "mfgan.sty", "_static/cover.png"]
-
-latex_show_pagerefs = False
-latex_domain_indices = False
-latex_use_modindex = False
-
-
-# Add any paths that contain custom static files (such as style sheets) here,
-# relative to this directory. They are copied after the builtin static files,
-# so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static']
-
-html_css_files = ['custom.css',
-                  'https://example.com/css/custom.css',
-                  ('print.css', {'media': 'print'})]
-
-
-
-
-autosummary_generate = True
+master_doc = 'index'
