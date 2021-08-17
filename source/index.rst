@@ -71,7 +71,7 @@ Transboundary Basins, i.e Cuvelai, Zambezi, Limpopo and Okavango.
 2.0 Background
 ****************************************
 
-.. figure:: https://github.com/sethgis/12/blob/76e7c282edb98d012abfd3b68762d76d608f9689/Images/Project_area.PNG
+.. figure:: ../Images/Data Source.png
     :width: 500
     :align: left
     :height: 300
