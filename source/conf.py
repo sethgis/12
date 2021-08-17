@@ -87,20 +87,20 @@ html_context = {
 
 
 
-latex_elements = {
-# The paper size ('letterpaper' or 'a4paper').
-#'papersize': 'letterpaper',
+# latex_elements = {
+# # The paper size ('letterpaper' or 'a4paper').
+# #'papersize': 'letterpaper',
 
-# The font size ('10pt', '11pt' or '12pt').
-'pointsize': '10pt',
+# # The font size ('10pt', '11pt' or '12pt').
+# 'pointsize': '10pt',
 
-# Additional stuff for the LaTeX preamble.
-#'preamble':'',
+# # Additional stuff for the LaTeX preamble.
+# #'preamble':'',
 
-#Figure placement within LaTeX paper NOT WORKING
-'figure_align': 'H',
+# #Figure placement within LaTeX paper NOT WORKING
+# 'figure_align': 'H',
 
-}
+# }
 
 html_theme_options = {
     "rightsidebar": "true",
@@ -108,28 +108,28 @@ html_theme_options = {
     
 }
 
-latex_documents = [
+# latex_documents = [
   
-]
+# ]
 
-latex_elements = {
-     'papersize': '',
-     'fontpkg': '',
-     'fncychap': '',
-     'maketitle': '\\cover',
-     'pointsize': '',
-     'preamble': '',
-     'releasename': "",
-     'babel': '',
-     'printindex': '',
-     'fontenc': '',
-     'inputenc': '',
-     'classoptions': '',
-     'utf8extra': '',
+# latex_elements = {
+#      'papersize': '',
+#      'fontpkg': '',
+#      'fncychap': '',
+#      'maketitle': '\\cover',
+#      'pointsize': '',
+#      'preamble': '',
+#      'releasename': "",
+#      'babel': '',
+#      'printindex': '',
+#      'fontenc': '',
+#      'inputenc': '',
+#      'classoptions': '',
+#      'utf8extra': '',
      
-}
+# }
 
-latex_additional_files = ["mfgan-bw.sty", "mfgan.sty", "_static/cover.png"]
+# latex_additional_files = ["mfgan-bw.sty", "mfgan.sty", "_static/cover.png"]
 
 latex_show_pagerefs = False
 latex_domain_indices = False
