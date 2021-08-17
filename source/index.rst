@@ -24,7 +24,9 @@ Indices and tables
 System Documentation
 ****************************************  
 
-.. figure:: D:\Wetland3.PNG
+
+
+.. figure:: ../source/_static/Images/LDMS.png
     :width: 600
     :align: left
     :height: 300
