@@ -24,7 +24,9 @@ Indices and tables
 System Documentation
 ****************************************  
 
-
+.. image:: Images/Project_area.png
+  :width: 400
+  :alt: Alternative text
 
 .. figure:: ..Images/Project_area.png
     :width: 600
