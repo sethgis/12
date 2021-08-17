@@ -16,21 +16,8 @@
 
 
 # -- Project information -----------------------------------------------------
-import sys, os
 
-sys.path.insert(0, os.path.abspath('extensions'))
-
-extensions = ['sphinx.ext.autodoc', 'sphinx.ext.doctest', 'sphinx.ext.todo',
-              'sphinx.ext.coverage', 'sphinx.ext.pngmath', 'sphinx.ext.ifconfig',
-              'epub2', 'mobi', 'autoimage', 'code_example']
-
-todo_include_todos = True
-templates_path = ['_templates']
-source_suffix = '.rst'
-master_doc = 'index'
-exclude_patterns = []
-add_function_parentheses = True
-project = 'Wetland Monitoring and Assessment Service (WeMAST)'
+project = 'TROFMIS'
 copyright = '2021, LocateIT Limited'
 author = 'LocateIT Limited'
 
@@ -44,6 +31,7 @@ release = '1.0.0'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -54,92 +42,58 @@ templates_path = ['_templates']
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-language = 'Y'
+language = 'y'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = []
 
-
-# -- Options for HTML output -------------------------------------------------
-
-# The theme to use for HTML and HTML Help pages.  See the documentation for
-# a list of builtin themes.
-#
 import sphinx_rtd_theme
 
-extensions = [
-	
+extensions = ["sphinx_rtd_theme"
 ]
 
-
-# Add any paths that contain templates here, relative to this directory.
-templates_path = ['_templates']
-
-# List of patterns, relative to source directory, that match files and
-# directories to ignore when looking for source files.
-# This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = []
-
-
-# -- Options for HTML output -------------------------------------------------
-
-# The theme to use for HTML and HTML Help pages.  See the documentation for
-# a list of builtin themes.
-#
-#html_theme = 'alabaster'
-#html_theme_path = [better_theme_path]
 html_theme = "sphinx_rtd_theme"
-
-html_sidebars = { '**': ['globaltoc.html', 'relations.html', 'sourcelink.html', 'searchbox.html'] }
 
 
 html_theme_options = {
-	'canonical_url': '',
-    'analytics_id': '',  #  Provided by Google in your dashboard
-    #'analytics_anonymize_ip': False,
+    'analytics_id': 'G-XXXXXXXXXX',  #  Provided by Google in your dashboard
+    'analytics_anonymize_ip': False,
     'logo_only': False,
     'display_version': True,
-    'prev_next_buttons_location': 'bottom',
+    'prev_next_buttons_location': "both",
     'style_external_links': False,
-    #'vcs_pageview_mode': '',
-    'style_nav_header_background': 'black',
+    'vcs_pageview_mode': '',
+    'style_nav_header_background': 'green',
     # Toc options
-    'collapse_navigation': False,
+    'collapse_navigation': True,
     'sticky_navigation': True,
-    'navigation_depth': 5,
-    'includehidden': False,
+    'navigation_depth': 2,
+    'includehidden': True,
     'titles_only': False
-	}
+}
 
-#html_theme_options['cssfiles'] = ['_static/style.css']
-#html_theme_path = []
+# -- Options for HTML output -------------------------------------------------
+
+# The theme to use for HTML and HTML Help pages.  See the documentation for
+# a list of builtin themes.
+#
+# html_theme = 'scrolls'
+
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
-html_logo = 'logo.png'
-
-html_context = {
-"display_github": False, # Add 'Edit on Github' link instead of 'View page source'
-"last_updated": True,
-"commit": False,
-}
-
-latex_elements = {
-# The paper size ('letterpaper' or 'a4paper').
-#'papersize': 'letterpaper',
-
-# The font size ('10pt', '11pt' or '12pt').
-'pointsize': '10pt',
-
-# Additional stuff for the LaTeX preamble.
-#'preamble':'',
-
-#Figure placement within LaTeX paper NOT WORKING
-'figure_align': 'H',
-
-}
-
-master_doc = 'index'
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
