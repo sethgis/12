@@ -69,7 +69,7 @@ Transboundary Basins, i.e Cuvelai, Zambezi, Limpopo and Okavango.
 2.0 Background
 ****************************************
 
-.. figure:: D:\System2.PNG
+.. figure:: https://github.com/sethgis/12/blob/76e7c282edb98d012abfd3b68762d76d608f9689/Images/Project_area.PNG
     :width: 500
     :align: left
     :height: 300
@@ -97,7 +97,7 @@ The above categirized indicators, had root sub indicators that were defined in a
 the Wetland and Transboundary basin conditions and health. The various sub indicators are listed below.
 
 
-.. figure:: D:\DataSource2.PNG
+.. figure:: https://github.com/sethgis/12/blob/76e7c282edb98d012abfd3b68762d76d608f9689/Images/Project_area.PNG
     :width: 600
     :align: left
     :height: 500
