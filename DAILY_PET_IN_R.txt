@@ -1,0 +1,40 @@
+library(chirps)
+library("remotes")
+LIBRARY(ggplot2)
+library(parallel)
+library(ggplot2)
+library(readxl)
+library(Lmoments)
+library(lmomco)
+library(SPEI)
+library(dplyr)
+
+Temp_data <- read.csv('Merged_Temp_Sensor_Station_4PET_processed.csv')
+View(Temp_data)
+
+
+PET <- thornthwaite(Temp_data$AthiRiver - 272.15, lat = -1.5)
+PET
+
+subset_col <- subset(Temp_data, select=AthiRiver:Wamunyu)
+PET_test <- thornthwaite(Temp_data %>% select(AthiRiver:Wamunyu) - 272.15, 
+                         lat = c(-1.5, -1.5,-1.5, -1.5,-1.5,
+                                 -1.5,-1.5, -1.5,-1.5, -1.5, 
+                                 -1.5,-1.5, -1.5,-1.5, -1.5,
+                                 -1.5, -1.5,-1.5, -1.5,-1.5, 
+                                 -1.5, -1.5,-1.5, -1.5,-1.5, 
+                                 -1.5,-1.5, -1.5,-1.5, -1.5,
+                                 -1.5, -1.5,-1.5, -1.5,-1.5,
+                                 -1.5,-1.5, -1.5,-1.5, -1.5,-1.5
+                                 ))
+
+
+PET_test
+
+
+
+
+my_data %>% select(1:3)
+
+degrees <- subset_col - 272.15
+View(degrees)
